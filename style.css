@@ -1,193 +1,135 @@
-{
-	margin: 0;
-	padding: 0;
+*{
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 
-#nav-bar
-{
-	position: stickt;
-	top: 0;
-	z-index: 10;
+/******************** Navbar *******************/
+.navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-nav .nav-link:hover{
+    background: #000 !important;
+    color: rgb(118, 200, 173) !important;
+}
+.navbar-brand img{
+    height: 50px;
+}
+.navbar-toggler-icon{
+    background-image: url(images/menu.png) !important;
 }
 
-.progress-bar
-{
-	border-radius: 16px;
+/********************Landing Section *******************/
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-attachment: fixed;
+}
+.home-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-center h1{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+.home-center p{
+    color: white;
+    font-weight: 500;   
+}
+.home-btn .btn-shop{
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.home-btn .btn-shop:hover{
+    color: black;
+    background: white;
+}
+.home-btn .btn-member{
+    border: 2px solid white;
+    color: black;
+    background: white;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.home-btn .btn-member:hover{
+    color: white;
+    background: none;
 }
 
-.progress
-{
-	border-radius: 16px!important;
-	margin-bottom: 20px;
+/********************Product Section *******************/
+.hoverImg{
+    overflow: hidden;
 }
-
-
-
-.navbar-nav li
-{
-	padding: 0 10px;
+.hoverImg img{
+    transition: 0.7s;
 }
-
-.navbar-nav li a
-{
-	float: center;
-	text-align: center;
+.hoverImg:hover img{
+    transform: scale(1.1);
 }
-
-#nav-bar ul li a:hover
-{
-	color: #007bff!important;
+.btnCard{
+    border: 2px solid black;
+    background: #000;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
 }
-
-.navbar
-{
-	background: #fff;
+.btnCard:hover{
+    background: none;
+    color: black;
+    transition: 0.5s;
 }
-
-.navbar-toggler
-{
-	border: none!important;
+.btnView{
+    border: 2px solid black;
+    background: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
 }
-
-.nav-link
-{
-	color: #555!important;
-	font-weight: 600;
-	font-size: 16px;
-}
-
-
-/*-----------contact----------*/
-body, html{
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	font-family: 'Sniglet', cursive;
-}
-
-
-/* Animation webkit */
-@-webkit-keyframes myfirst
-{
-	0% {margin-left: -235px}
-	90% {margin-left: 100%;}
-	100% {margin-left: 100%;}
-}
-
-/* Animation */
-@keyframes myfirst
-{
-	0% {margin-left: -235px}
-	70% {margin-left: 100%;}
-	100% {margin-left: 100%;}
-}
-
-
-
-
-header{
-	height: 160px;
-}
-
-#form{
-	height: 100%;	
-	background-color: #98d4f3;
-	overflow: hidden;
-	position: relative;
-	
-}
-form{
-	margin: 0 auto;
-	width: 500px;
-	padding-top: 40px;
-	color: white;
-	position: relative;
-	
-	
-}
-label, input, textarea{
-	display: block;	
-}
-input, textarea{
-	width: 500px;	
-	border: none;
-	border-radius: 20px;
-	outline: none;
-	padding: 10px;
-	font-family: 'Sniglet', cursive;
-	font-size: 1em;
-	color: #676767;
-	transition: border 0.5s;
-	-webkit-transition: border 0.5s;
-	-moz-transition: border 0.5s;
-	-o-transition: border 0.5s;
-	border: solid 3px #98d4f3;	
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	
-}
-input:focus, textarea:focus{
-	border: solid 3px #77bde0;	
-}
-
-textarea{
-	height: 100px;	
-	resize: none; 
-	overflow: auto;
-}
-input[type="submit"]{
-	background-color: #F90;
-	color: white;
-	height: 50px;
-	cursor: pointer;
-	margin-top: 30px;
-	font-size: 1.29em;
-	font-family: 'Sniglet', cursive;
-	-webkit-transition: background-color 0.5s;
-	-moz-transition: background-color 0.5s;
-	-o-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-input[type="submit"]:hover{
-	background-color: #e58f0e;
-	
-}
-label{
-	font-size: 1.5em;
-	margin-top: 20px;
-	padding-left: 20px;
-}
-
-/*-----------Slider----------*/
-
-#slider
-{
-	width: 100%;
-}
-
-.title
-{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-
-.title h1
-{
-	color: #fff;
-	font-size: 100px;
+.btnView:hover{
+    background: #000;
+    color: white;
+    transition: 0.5s;
 }
 
 
-/*-------------Footer-------------*/
-
-#footer
-{
-	background: #333;
-	color: #fff;
-	padding: 12px;
+/******************** Testmonial *******************/
+.carousel-inner{
+    text-align: center;
+}
+.carousel-inner .carousel-item img{
+    width: 30%;
+    border-radius: 50%;
 }
 
+
+
+/******************* Media Quary **********************/
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+    .home-center h1{
+        font-size: 40px;
+    }
+    .home-center p{
+        font-size: 15px;
+    }
+    .home-btn{
+        margin-top: 80px;
+    }
+    .home-btn .btn-member{
+        margin-top: 10px;
+    }
+}
 
